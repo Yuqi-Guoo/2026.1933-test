@@ -1,0 +1,97 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 153.2029.
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.72 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.55 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (3.90 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          153.2029      558.0000           264.22%
+      0     0      178.4001     4      153.2029      558.0000        0  264.22%
+*     0+    0                          155.9037      178.4001            14.43%
+      0     2      160.7228     6      155.9037      160.6788        0    3.06%
+Elapsed time = 4.14 sec. (1307.61 ticks, tree = 0.01 MB, solutions = 2)
+      1     3      158.0364     8      155.9037      160.6689      715    3.06%
+*     3     3      integral     0      157.2384      158.0357     1160    0.51%
+      5     1        cutoff            157.2384      158.0336     1231    0.51%
+      9     2        cutoff            157.2384      157.9634     1625    0.46%
+
+User cuts applied:  14
+
+Root node processing (before b&c):
+  Real time             =    4.14 sec. (1308.00 ticks)
+Sequential b&c:
+  Real time             =    1.92 sec. (816.69 ticks)
+                          ------------
+Total (root+branch&cut) =    6.05 sec. (2124.69 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        true
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    ZLP
+solver                                  cplex
+
+p                                       3
+r                                       10
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+Solution X: [8, 59, 74]
+Solution Y: [3, 6, 8, 24, 34, 35, 74, 78, 90, 97]
+
+leader_capture_demand: [50.96688453633405, 55.945503379605306, 50.32603672196459]
+follower_capture_demand: [34.47961929060472, 41.07444830345891, 28.0, 48.79678900708796, 28.693694681018563, 26.354898867416445, 26.5, 38.18089777140206, 48.66775954217772, 80.01346789892969]
+
+========== Summary ==========
+Total Demand: 558
+Total Leader Captured: 157.23842463790393
+Total Follower Captured: 400.761575362096
+
+@PrintInfos
+ItCnt: 1733
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 6.05 sec
+Objective Value: 157.238425
+Number of Nodes:     12
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     6 / 1.39 [rUC]     0 / 0.00 [sLC]     1 / 0.07 [sUC]    10 / 0.98 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     8 / 0.19 [rUC]     0 / 0.00 [sLC]     2 / 0.06 [sUC]    18 / 0.69 
+Separation Round: [phase1] 0  [rLC] 8  [rUC] 0  [sLC] 2  [sUC] 18
+Root Best Bound 158.035666
+Root Best Integer: 155.903731
+Best Bound: 157.238425
+Best Integer: 157.238425
+

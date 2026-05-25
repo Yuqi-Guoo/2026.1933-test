@@ -1,0 +1,165 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 889.4099.
+Tried aggregator 1 time.
+Reduced MIP has 500501 rows, 501001 columns, and 1501000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.51 sec. (474.50 ticks)
+Probing time = 0.07 sec. (62.57 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 500501 rows, 501001 columns, and 1501000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.50 sec. (466.39 ticks)
+Probing time = 0.07 sec. (62.57 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.17 sec. (192.72 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          889.4099     2716.0000           205.37%
+      0     0      902.7133     4      889.4099     2716.0000        0  205.37%
+      0     2      902.7133     4      889.4099      902.7131        0    1.50%
+Elapsed time = 1008.75 sec. (740300.27 ticks, tree = 0.01 MB, solutions = 1)
+      1     1        cutoff            889.4099      902.7119    12590    1.50%
+      2     2      896.2540     6      889.4099      896.2538    32461    0.77%
+      3     3      895.8282    11      889.4099      896.2532    34569    0.77%
+      4     4      891.5095     2      889.4099      895.8282    40493    0.72%
+      5     5      891.4215     2      889.4099      895.8282    41265    0.72%
+*     6     4      integral     0      890.8346      895.8282    69759    0.56%
+*     7     2      integral     0      891.3651      895.8282    70488    0.50%
+      8     3      895.7988     8      891.3651      895.8282    75719    0.50%
+      9     4      895.7966     8      891.3651      895.8282    75735    0.50%
+     10     3    infeasible            891.3651      895.8282   114013    0.50%
+Elapsed time = 2375.62 sec. (1650726.36 ticks, tree = 0.19 MB, solutions = 3)
+     11     4      895.6907    11      891.3651      895.8282   125382    0.50%
+     12     3        cutoff            891.3651      895.8282   187719    0.50%
+     13     4      895.6616    11      891.3651      895.8282   206510    0.50%
+     14     3        cutoff            891.3651      895.8282   208828    0.50%
+     15     4      895.6121    10      891.3651      895.8282   209358    0.50%
+     16     5      895.2345     8      891.3651      895.8282   211637    0.50%
+     17     6      894.7410     4      891.3651      895.8282   215128    0.50%
+     18     7      894.6370     4      891.3651      895.8282   215771    0.50%
+     19     6        cutoff            891.3651      895.8282   216462    0.50%
+     20     7      894.5424     6      891.3651      895.8282   217405    0.50%
+Elapsed time = 3191.92 sec. (2243248.56 ticks, tree = 8.36 MB, solutions = 3)
+     21     6        cutoff            891.3651      895.8282   219347    0.50%
+     22     7      894.2883     9      891.3651      895.8282   223204    0.50%
+     23     6        cutoff            891.3651      895.8282   229491    0.50%
+     24     7      894.2172    13      891.3651      895.8282   230994    0.50%
+     25     6        cutoff            891.3651      895.8282   237251    0.50%
+     26     7      894.1337    11      891.3651      895.8282   238348    0.50%
+     27     8      894.0864    11      891.3651      895.8282   239398    0.50%
+     28     9      892.2009     2      891.3651      895.8282   248662    0.50%
+     29    10      892.1314     2      891.3651      895.8282   248663    0.50%
+     31    10      892.0960     2      891.3651      895.8282   248880    0.50%
+Elapsed time = 4178.00 sec. (3019785.73 ticks, tree = 8.90 MB, solutions = 3)
+     33    10      892.0908     2      891.3651      895.8282   248924    0.50%
+*    35     8      integral     0      891.9478      895.8282   248935    0.44%
+     37     6        cutoff            891.9478      895.6613   250674    0.42%
+     38     5        cutoff            891.9478      895.6075   252117    0.41%
+     39     4        cutoff            891.9478      895.2337   252937    0.37%
+     40     3        cutoff            891.9478      894.2169   253366    0.25%
+     41     2        cutoff            891.9478      894.0864   257835    0.24%
+     42     3      893.9773    14      891.9478      894.0858   261572    0.24%
+     43     4      893.9073    12      891.9478      894.0858   263193    0.24%
+     44     5      893.8087    13      891.9478      894.0858   265130    0.24%
+Elapsed time = 4574.07 sec. (3264191.16 ticks, tree = 0.55 MB, solutions = 4)
+     45     6      893.6938     6      891.9478      894.0858   266685    0.24%
+     46     7      893.5893    19      891.9478      894.0858   268270    0.24%
+     47     8      893.5672    13      891.9478      894.0858   269448    0.24%
+     48     9      893.3998    16      891.9478      894.0858   271373    0.24%
+     49    10      893.3354    14      891.9478      894.0858   272517    0.24%
+     50    11      893.2878    13      891.9478      894.0858   274057    0.24%
+     51    12      893.2755    15      891.9478      894.0858   274303    0.24%
+     52    13      893.2313    13      891.9478      894.0858   275077    0.24%
+     53    14      893.1997    13      891.9478      894.0858   275733    0.24%
+     54    15      892.9602    12      891.9478      894.0858   277046    0.24%
+Elapsed time = 5052.37 sec. (3529883.79 ticks, tree = 2.34 MB, solutions = 4)
+     55    16      892.8249     9      891.9478      894.0858   278283    0.24%
+     56    17      892.8168     8      891.9478      894.0858   278850    0.24%
+     57    18      892.6396    11      891.9478      894.0858   280750    0.24%
+     58    19      892.2916    11      891.9478      894.0858   283396    0.24%
+     59    20      892.1292    13      891.9478      894.0858   285643    0.24%
+     60    21      891.9851     8      891.9478      894.0858   286902    0.24%
+     61    20        cutoff            891.9478      894.0858   287038    0.24%
+     63    18        cutoff            891.9478      893.9772   288704    0.23%
+     64    17        cutoff            891.9478      893.9070   289768    0.22%
+     65    16        cutoff            891.9478      893.8087   290399    0.21%
+Elapsed time = 5431.37 sec. (3760544.03 ticks, tree = 2.70 MB, solutions = 4)
+     66    15        cutoff            891.9478      893.6938   290468    0.20%
+     67    14        cutoff            891.9478      893.5893   294064    0.18%
+     68    13        cutoff            891.9478      893.5672   295742    0.18%
+     69    12        cutoff            891.9478      893.3998   296120    0.16%
+     70    11        cutoff            891.9478      893.3354   296228    0.16%
+     71    10        cutoff            891.9478      893.2877   297284    0.15%
+     72     9        cutoff            891.9478      893.2739   298177    0.15%
+     73     8        cutoff            891.9478      893.2313   298840    0.14%
+     74     7        cutoff            891.9478      893.1997   299810    0.14%
+     75     6        cutoff            891.9478      892.9587   299967    0.11%
+Elapsed time = 5650.71 sec. (3909917.16 ticks, tree = 0.90 MB, solutions = 4)
+     76     5        cutoff            891.9478      892.8249   300827    0.10%
+     77     4        cutoff            891.9478      892.8168   301047    0.10%
+     78     3        cutoff            891.9478      892.6350   301297    0.08%
+     79     2        cutoff            891.9478      892.2916   301397    0.04%
+     80     1        cutoff            891.9478      892.1284   301578    0.02%
+     81     0        cutoff            891.9478      891.9478   301833    0.00%
+
+User cuts applied:  27
+
+Root node processing (before b&c):
+  Real time             = 1008.69 sec. (740236.48 ticks)
+Sequential b&c:
+  Real time             = 4688.58 sec. (3199503.33 ticks)
+                          ------------
+Total (root+branch&cut) = 5697.27 sec. (3939739.81 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Qi
+fn                                      data/Qi/instance_500_1000.csv
+mode                                    ZLP
+solver                                  cplex
+
+p                                       2
+r                                       5
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 301833
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 5697.27 sec
+Objective Value: 891.947843
+Number of Nodes:     82
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     4 / 10.64 [rUC]     2 / 5.65 [sLC]     3 / 9.66 [sUC]    22 / 284.31 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     5 / 7.09 [rUC]     2 / 4.24 [sLC]     6 / 7.48 [sUC]    98 / 214.60 
+Separation Round: [phase1] 0  [rLC] 5  [rUC] 2  [sLC] 6  [sUC] 98
+Root Best Bound 896.253819
+Root Best Integer: 889.409882
+Best Bound: 891.947843
+Best Integer: 891.947843
+

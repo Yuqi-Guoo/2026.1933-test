@@ -1,0 +1,102 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 194.5788.
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.72 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.55 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (3.90 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          194.5788      558.0000           186.77%
+      0     0      202.1203     6      194.5788      558.0000        0  186.77%
+*     0+    0                          197.1549      202.1203             2.52%
+      0     2      201.4020    11      197.1549      201.4017        0    2.15%
+Elapsed time = 4.05 sec. (863.60 ticks, tree = 0.01 MB, solutions = 2)
+      2     4      197.9618     3      197.1549      199.9908      924    1.44%
+*     3     3      integral     0      197.8567      199.9908      959    1.08%
+      7     3        cutoff            197.8567      199.9836     1352    1.07%
+     13     3      199.5147     7      197.8567      199.6371     1828    0.90%
+     15     5      198.7485     9      197.8567      199.6371     2397    0.90%
+     19     9      198.0914     9      197.8567      199.6371     2721    0.90%
+     22     8      198.3498     6      197.8567      199.5136     3226    0.84%
+     28    10      198.4076     5      197.8567      199.0247     3744    0.59%
+*    30     6      integral     0      198.2869      199.0247     3849    0.37%
+
+User cuts applied:  29
+
+Root node processing (before b&c):
+  Real time             =    4.05 sec. (864.47 ticks)
+Sequential b&c:
+  Real time             =    6.58 sec. (2263.52 ticks)
+                          ------------
+Total (root+branch&cut) =   10.63 sec. (3127.98 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        true
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    ZLP
+solver                                  cplex
+
+p                                       3
+r                                       6
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+Solution X: [32, 59, 74]
+Solution Y: [8, 13, 19, 20, 40, 42]
+
+leader_capture_demand: [55.93086924206246, 65.11986591154171, 77.23613270284459]
+follower_capture_demand: [48.695395953672154, 54.580226398654034, 44.53955678984535, 85.13215939999253, 61.76779266128517, 64.99800094010203]
+
+========== Summary ==========
+Total Demand: 558
+Total Leader Captured: 198.28686785644874
+Total Follower Captured: 359.71313214355126
+
+@PrintInfos
+ItCnt: 4038
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 10.63 sec
+Objective Value: 198.286868
+Number of Nodes:     37
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     6 / 1.36 [rUC]     2 / 0.23 [sLC]     1 / 0.18 [sUC]    24 / 3.94 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     8 / 0.30 [rUC]     2 / 0.08 [sLC]     3 / 0.16 [sUC]    60 / 3.33 
+Separation Round: [phase1] 0  [rLC] 8  [rUC] 2  [sLC] 3  [sUC] 60
+Root Best Bound 199.990787
+Root Best Integer: 197.154925
+Best Bound: 198.286868
+Best Integer: 198.286868
+

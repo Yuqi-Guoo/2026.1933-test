@@ -1,0 +1,93 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 344.5189.
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.72 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.55 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (3.91 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          344.5189      558.0000            61.97%
+      0     0      348.0488     6      344.5189      558.0000        0   61.97%
+*     0+    0                          347.9772      348.0488             0.02%
+      0     2      348.0488     6      347.9772      348.0448        0    0.02%
+Elapsed time = 3.45 sec. (341.65 ticks, tree = 0.01 MB, solutions = 2)
+
+User cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    3.45 sec. (341.74 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (9.23 ticks)
+                          ------------
+Total (root+branch&cut) =    3.46 sec. (350.97 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        true
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    ZLP
+solver                                  cplex
+
+p                                       8
+r                                       4
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+Solution X: [1, 12, 31, 32, 52, 58, 78, 86]
+Solution Y: [58, 59, 74, 89]
+
+leader_capture_demand: [49.27583147374873, 41.14955699093447, 51.9974664088333, 45.459692815727436, 43.30225402685963, 34.0, 38.180897771402066, 44.611531137104365]
+follower_capture_demand: [47.111212886707854, 56.059531680633064, 60.341514561078846, 46.51051024697026]
+
+========== Summary ==========
+Total Demand: 558
+Total Leader Captured: 347.97723062461
+Total Follower Captured: 210.02276937539003
+
+@PrintInfos
+ItCnt: 18
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 3.46 sec
+Objective Value: 347.977231
+Number of Nodes:      3
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     4 / 1.22 [rUC]     0 / 0.19 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     6 / 0.19 [rUC]     2 / 0.06 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 6  [rUC] 2  [sLC] 0  [sUC] 0
+Root Best Bound 347.977231
+Root Best Integer: 347.977231
+Best Bound: 347.977231
+Best Integer: 347.977231
+

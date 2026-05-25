@@ -1,0 +1,126 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 203.7863.
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          203.7863      558.0000           173.82%
+      0     0      247.5233     2      203.7863      558.0000        0  173.82%
+      0     0      238.1583     4      203.7863 UserPurge2: 1        4   16.87%
+*     0+    0                          210.5613      238.1583            13.11%
+      0     0      220.8030     3      210.5613 UserPurge2: 1       14    4.86%
+      0     0      218.8932     2      210.5613 UserPurge2: 1       18    3.96%
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 28 columns.
+Reduced MIP has 1 rows, 73 columns, and 72 nonzeros.
+Reduced MIP has 72 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 73 columns, and 72 nonzeros.
+Reduced MIP has 72 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Represolve time = 0.00 sec. (0.21 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.10 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          210.5613      218.8932             3.96%
+      0     0      218.8011     3      210.5613      218.8011       26    3.91%
+      0     0      218.5719     3      210.5613 UserPurge2: 1       28    3.80%
+      0     0      216.1526     3      210.5613 UserPurge2: 1       32    2.66%
+      0     0      215.2140     3      210.5613 UserPurge2: 1       34    2.21%
+*     0+    0                          212.1554      215.2140             1.44%
+      0     0      214.6565     4      212.1554 UserPurge2: 1       36    1.18%
+*     0+    0                          212.6039      214.6565             0.97%
+      0     0      214.3245     4      212.6039 UserPurge2: 1       39    0.81%
+      0     0      213.9175     4      212.6039 UserPurge2: 1       42    0.62%
+      0     0      213.6709     5      212.6039 UserPurge2: 1       44    0.50%
+      0     0      213.6532     6      212.6039 UserPurge2: 1       45    0.49%
+      0     0      213.4841     5      212.6039 UserPurge2: 1       50    0.41%
+      0     0      213.2900     5      212.6039 UserPurge2: 1       52    0.32%
+      0     0      213.2162     5      212.6039 UserPurge2: 1       54    0.29%
+      0     0      213.1484     6      212.6039 UserPurge2: 1       57    0.26%
+      0     0      212.9718     6      212.6039 UserPurge2: 1       60    0.17%
+      0     0      212.8501     5      212.6039 UserPurge2: 1       63    0.12%
+      0     2      212.8501     5      212.6039      212.7626       63    0.07%
+Elapsed time = 3.49 sec. (3.51 ticks, tree = 0.01 MB, solutions = 4)
+
+User cuts applied:  12
+
+Root node processing (before b&c):
+  Real time             =    3.48 sec. (3.51 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (0.10 ticks)
+                          ------------
+Total (root+branch&cut) =    3.50 sec. (3.62 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    NewSubmodular
+solver                                  cplex
+
+p                                       2
+r                                       5
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 74
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 3.50 sec
+Objective Value: 212.603919
+Number of Nodes:      3
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]    22 / 1.44 [rUC]    41 / 0.14 [sLC]     0 / 0.00 [sUC]     5 / 0.01 
+PMP             [phase1]     0 / 0.00 [rLC]     7 / 0.24 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 21  [rUC] 19  [sLC] 0  [sUC] 2
+Root Best Bound 212.603919
+Root Best Integer: 212.603919
+Best Bound: 212.603919
+Best Integer: 212.603919
+

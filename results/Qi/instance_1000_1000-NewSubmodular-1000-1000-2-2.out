@@ -1,0 +1,112 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 2709.4137.
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 1001 columns, and 1000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.30 ticks)
+Probing time = 0.00 sec. (0.11 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 1001 columns, and 1000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.31 ticks)
+Probing time = 0.00 sec. (0.11 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.21 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2709.4137     5432.0000           100.49%
+      0     0     3294.8133     2     2709.4137     5432.0000        0  100.49%
+      0     0     2953.0646     3     2709.4137 UserPurge2: 1       13    8.99%
+      0     0     2848.2876     4     2709.4137 UserPurge2: 1       39    5.13%
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 444 columns.
+Reduced MIP has 1 rows, 557 columns, and 556 nonzeros.
+Reduced MIP has 556 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.25 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 557 columns, and 556 nonzeros.
+Reduced MIP has 556 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.17 ticks)
+Represolve time = 0.00 sec. (1.25 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.84 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         2709.4137     2848.2876             5.13%
+      0     0     2824.6218     3     2709.4137     2824.6218       57    4.25%
+      0     0     2790.3866     4     2709.4137 UserPurge2: 1       75    2.99%
+      0     0     2781.2865     4     2709.4137 UserPurge2: 1       83    2.65%
+      0     0     2766.3827     4     2709.4137 UserPurge2: 1       98    2.10%
+      0     2     2766.3827     4     2709.4137     2766.3546       98    2.10%
+Elapsed time = 11.65 sec. (17.47 ticks, tree = 0.01 MB, solutions = 1)
+*     2     0      integral     0     2716.0000     2766.3546      454    1.85%
+
+User cuts applied:  46
+
+Root node processing (before b&c):
+  Real time             =   11.65 sec. (17.56 ticks)
+Sequential b&c:
+  Real time             =   10.52 sec. (24.57 ticks)
+                          ------------
+Total (root+branch&cut) =   22.17 sec. (42.13 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Qi
+fn                                      data/Qi/instance_1000_1000.csv
+mode                                    NewSubmodular
+solver                                  cplex
+
+p                                       2
+r                                       2
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 454
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 22.17 sec
+Objective Value: 2716.000000
+Number of Nodes:      3
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]    11 / 8.46 [rUC]     7 / 1.16 [sLC]     0 / 4.17 [sUC]    40 / 6.31 
+PMP             [phase1]     0 / 0.00 [rLC]     2 / 5.76 [rUC]     0 / 0.00 [sLC]     1 / 4.14 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 12  [rUC] 7  [sLC] 1  [sUC] 40
+Root Best Bound 2716.000000
+Root Best Integer: 2716.000000
+Best Bound: 2716.000000
+Best Integer: 2716.000000
+

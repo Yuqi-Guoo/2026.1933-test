@@ -1,0 +1,134 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 1778.1974.
+Tried aggregator 1 time.
+Reduced MIP has 800801 rows, 801001 columns, and 2401000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.82 sec. (759.66 ticks)
+Probing time = 0.11 sec. (100.05 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 800801 rows, 801001 columns, and 2401000 nonzeros.
+Reduced MIP has 1000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.79 sec. (746.68 ticks)
+Probing time = 0.10 sec. (100.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.26 sec. (308.31 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1778.1974     4368.0000           145.64%
+      0     0     1784.4268    11     1778.1974     4368.0000        0  145.64%
+      0     2     1784.4268    11     1778.1974     1784.4265        0    0.35%
+Elapsed time = 955.15 sec. (1067484.35 ticks, tree = 0.01 MB, solutions = 1)
+      1     3     1783.8515    11     1778.1974     1784.4265     2592    0.35%
+      2     4     1781.0135     4     1778.1974     1783.8513     8001    0.32%
+*     3     3      integral     0     1780.9592     1783.8513     8022    0.16%
+      3     3     1780.9592     0     1780.9592     1783.8513     8022    0.16%
+      4     4     1780.9738     4     1780.9592     1783.8513     8152    0.16%
+      5     3        cutoff           1780.9592     1783.8513     8180    0.16%
+      6     2        cutoff           1780.9592     1783.8513     8193    0.16%
+      7     3     1783.7038    11     1780.9592     1783.8510     8939    0.16%
+      8     4     1783.6583    10     1780.9592     1783.8510     9211    0.16%
+      9     5     1783.4926    15     1780.9592     1783.8510    11749    0.16%
+     10     4        cutoff           1780.9592     1783.8510    14932    0.16%
+Elapsed time = 1108.24 sec. (1179487.60 ticks, tree = 0.58 MB, solutions = 2)
+     11     5     1783.3629    13     1780.9592     1783.8510    17180    0.16%
+     12     6     1783.1251    21     1780.9592     1783.8510    21464    0.16%
+     13     5        cutoff           1780.9592     1783.8510    23385    0.16%
+     14     6     1783.0198    19     1780.9592     1783.8510    25137    0.16%
+     15     7     1782.9415    22     1780.9592     1783.8510    25525    0.16%
+     16     8     1781.2828     6     1780.9592     1783.8510    27786    0.16%
+     17     7        cutoff           1780.9592     1783.8510    30047    0.16%
+     18     6        cutoff           1780.9592     1783.8510    36275    0.16%
+     19     7     1781.2426     4     1780.9592     1783.7035    45076    0.15%
+*    20     6      integral     0     1781.1348     1783.7035    52681    0.14%
+Elapsed time = 1723.49 sec. (1592258.35 ticks, tree = 13.66 MB, solutions = 3)
+     21     5        cutoff           1781.1348     1783.7035    53235    0.14%
+     22     6     1781.5112    13     1781.1348     1783.4925    65076    0.13%
+     23     7     1781.4306    10     1781.1348     1783.4925    65701    0.13%
+     24     8     1781.3909     8     1781.1348     1783.4925    66003    0.13%
+     25     9     1781.3626     6     1781.1348     1783.4925    66214    0.13%
+*    26     8      integral     0     1781.2307     1783.4925    66772    0.13%
+     27     7        cutoff           1781.2307     1783.4925    67591    0.13%
+     28     8     1781.3883    14     1781.2307     1783.1239    74225    0.11%
+     29     9     1781.3150     8     1781.2307     1783.1239    75508    0.11%
+     30    10     1781.3004    16     1781.2307     1783.1239    75650    0.11%
+Elapsed time = 2156.01 sec. (1879483.39 ticks, tree = 14.52 MB, solutions = 4)
+     31     9        cutoff           1781.2307     1783.1239    75949    0.11%
+     32     8        cutoff           1781.2307     1783.1239    76001    0.11%
+     33     9     1781.6524     6     1781.2307     1782.9414    83586    0.10%
+     34    10     1781.5032     8     1781.2307     1782.9414    84320    0.10%
+     35    11     1781.5840     4     1781.2307     1782.9414    85340    0.10%
+*    36     3      integral     0     1781.5703     1782.9414    85522    0.08%
+     38     3     1782.8707    17     1781.5703     1782.9414    86256    0.08%
+     39     4     1782.7248    21     1781.5703     1782.9414    88321    0.08%
+     40     5     1782.6666    17     1781.5703     1782.9414    89593    0.08%
+     41     6     1782.6482    17     1781.5703     1782.9414    93735    0.08%
+Elapsed time = 2691.08 sec. (2178585.46 ticks, tree = 7.26 MB, solutions = 5)
+     42     7     1782.5254    20     1781.5703     1782.9414   104227    0.08%
+     43     8     1782.4685    20     1781.5703     1782.9414   107915    0.08%
+     44     9     1782.2688    18     1781.5703     1782.9414   118149    0.08%
+     45    10     1782.1901     2     1781.5703     1782.9414   121267    0.08%
+     46    11     1782.1884     2     1781.5703     1782.9414   121406    0.08%
+*    47    10      integral     0     1782.1817     1782.9414   121715    0.04%
+*    49     0      integral     0     1782.9093     1782.9093   122273    0.00%
+
+User cuts applied:  14
+
+Root node processing (before b&c):
+  Real time             =  955.06 sec. (1067395.71 ticks)
+Sequential b&c:
+  Real time             = 2225.51 sec. (1379178.37 ticks)
+                          ------------
+Total (root+branch&cut) = 3180.58 sec. (2446574.08 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Qi
+fn                                      data/Qi/instance_800_1000.csv
+mode                                    ZLP
+solver                                  cplex
+
+p                                       5
+r                                       10
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 122273
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 3180.58 sec
+Objective Value: 1782.909289
+Number of Nodes:     50
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     3 / 11.27 [rUC]     2 / 5.69 [sLC]     3 / 23.11 [sUC]    10 / 182.58 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     4 / 6.97 [rUC]     2 / 3.31 [sLC]     9 / 17.71 [sUC]    66 / 117.41 
+Separation Round: [phase1] 0  [rLC] 4  [rUC] 2  [sLC] 9  [sUC] 66
+Root Best Bound 1783.851254
+Root Best Integer: 1778.197417
+Best Bound: 1782.909289
+Best Integer: 1782.909289
+

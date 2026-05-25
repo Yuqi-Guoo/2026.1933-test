@@ -1,0 +1,142 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 275.3245.
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          275.3245      558.0000           102.67%
+      0     0      313.9338     2      275.3245      558.0000        0  102.67%
+      0     0      308.5693     4      275.3245      Fract: 1        4   12.07%
+*     0+    0                          276.3375      308.5693            11.66%
+      0     2      306.1335    10      276.3375      306.0403        4   10.75%
+Elapsed time = 2.83 sec. (2.02 ticks, tree = 0.01 MB, solutions = 2)
+*     5     5      integral     0      277.3326      305.7523       27   10.25%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Represolve time = 0.00 sec. (0.95 ticks)
+    496     0      304.6353    16      277.3326      Fract: 1     1409    9.82%
+    496     0      304.4612    14      277.3326      Fract: 1     1412    9.78%
+*   496+    0                          279.0000      304.4612             9.13%
+   1236   568      286.2739     3      279.0000      301.6805     3575    8.13%
+   2471  1650      287.1768     8      279.0000      299.8640     6909    7.48%
+   3495  2474      290.3509     7      279.0000      298.8098     9313    7.10%
+   4365  3163      284.8794     3      279.0000      297.9386    11220    6.79%
+   5170  3805      286.8640     4      279.0000      297.4086    13108    6.60%
+   5870  4355      286.3556     5      279.0000      296.9232    14642    6.42%
+   6633  4957      286.1931     4      279.0000      296.4946    16248    6.27%
+   7286  5480      284.5094     3      279.0000      296.2452    17665    6.18%
+   8169  6173      279.9824     3      279.0000      295.9468    19526    6.07%
+  10682  8090      285.1259     3      279.0000      294.9491    25265    5.72%
+Elapsed time = 11.29 sec. (3106.14 ticks, tree = 21.66 MB, solutions = 4)
+  13554 10196      279.7488     3      279.0000      293.4711    31957    5.19%
+  16153 11968      286.2394     6      279.0000      292.2059    37876    4.73%
+  18372 13324      282.3224     5      279.0000      290.8387    43341    4.24%
+  20240 14295      282.0341     5      279.0000      289.7750    48192    3.86%
+  21795 14887      280.8083     3      279.0000      288.9002    52786    3.55%
+  23230 15365      281.0528     4      279.0000      288.1746    57065    3.29%
+  24482 15477      281.5805     4      279.0000      287.4340    61099    3.02%
+  25638 15417        cutoff            279.0000      286.8128    64759    2.80%
+  26739 15298        cutoff            279.0000      286.1862    68374    2.58%
+  27715 14845      280.6304     3      279.0000      285.6081    71571    2.37%
+Elapsed time = 24.42 sec. (12645.83 ticks, tree = 55.47 MB, solutions = 4)
+  28696 14339        cutoff            279.0000      285.0902    74655    2.18%
+  29634 13612        cutoff            279.0000      284.5596    77438    1.99%
+  30568 12919      280.3417     4      279.0000      284.0946    80081    1.83%
+  31472 12129        cutoff            279.0000      283.6616    82605    1.67%
+  32370 11344        cutoff            279.0000      283.2868    85045    1.54%
+  33294 10485        cutoff            279.0000      282.9196    87427    1.40%
+  34220  9594        cutoff            279.0000      282.5777    89599    1.28%
+  35107  8755        cutoff            279.0000      282.2707    91787    1.17%
+  36038  7872        cutoff            279.0000      281.9831    93857    1.07%
+  36959  6991        cutoff            279.0000      281.6921    95867    0.96%
+Elapsed time = 29.21 sec. (22191.25 ticks, tree = 28.72 MB, solutions = 4)
+  37875  6084        cutoff            279.0000      281.3835    97777    0.85%
+  38777  5205        cutoff            279.0000      281.0973    99618    0.75%
+  39676  4315        cutoff            279.0000      280.8034   101394    0.65%
+  40577  3427        cutoff            279.0000      280.4937   103070    0.54%
+  41467  2539        cutoff            279.0000      280.1817   104743    0.42%
+  42362  1651        cutoff            279.0000      279.8357   106288    0.30%
+  43270   743        cutoff            279.0000      279.4187   107776    0.15%
+
+Gomory fractional cuts applied:  2
+User cuts applied:  770
+
+Root node processing (before b&c):
+  Real time             =    2.83 sec. (2.25 ticks)
+Sequential b&c:
+  Real time             =   29.40 sec. (29660.85 ticks)
+                          ------------
+Total (root+branch&cut) =   32.24 sec. (29663.11 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    OldSubmodular
+solver                                  cplex
+
+p                                       3
+r                                       3
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 108945
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 32.24 sec
+Objective Value: 279.000000
+Number of Nodes:  44014
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]    12 / 0.86 [rUC]     0 / 0.15 [sLC]   824 / 1.29 [sUC]     0 / 10.63 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     3 / 0.11 [rUC]     0 / 0.00 [sLC]     2 / 0.07 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 14  [rUC] 3  [sLC] 826  [sUC] 50120
+Root Best Bound 305.752320
+Root Best Integer: 276.337515
+Best Bound: 279.000000
+Best Integer: 279.000000
+

@@ -1,0 +1,241 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 333.4796.
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 101 columns, and 100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          333.4796      558.0000            67.33%
+      0     0      415.5759     2      333.4796      558.0000        0   67.33%
+      0     0      386.3045     3      333.4796 UserPurge2: 1        9   15.84%
+      0     0      374.1631     5      333.4796 UserPurge2: 1       17   12.20%
+      0     0      369.9856     7      333.4796 UserPurge2: 1       26   10.95%
+      0     0      365.5619     8      333.4796 UserPurge2: 1       38    9.62%
+      0     0      364.4311     9      333.4796 UserPurge2: 1       44    9.28%
+      0     0      363.7270    10      333.4796 UserPurge2: 1       55    9.07%
+      0     0      360.8785     9      333.4796 UserPurge2: 1       64    8.22%
+      0     0      360.2663    10      333.4796 UserPurge1: 1       65    8.03%
+      0     0      359.0976    11      333.4796 UserPurge2: 1       69    7.68%
+      0     0      358.3654    12      333.4796 UserPurge1: 1       72    7.46%
+      0     0      357.4139    11      333.4796 UserPurge2: 1       85    7.18%
+      0     0      355.7996    12      333.4796 UserPurge2: 1       96    6.69%
+      0     0      354.8890    12      333.4796 UserPurge1: 1      102    6.42%
+      0     0      354.2093    10      333.4796 UserPurge2: 1      114    6.22%
+      0     0      354.1433    12      333.4796 UserPurge1: 1      117    6.20%
+      0     0      354.0141    12      333.4796 UserPurge1: 1      120    6.16%
+*     0+    0                          333.7580      354.0141             6.07%
+      0     0      352.6421     9      333.7580 UserPurge2: 1      138    5.66%
+      0     0      352.0063    10      333.7580 UserPurge1: 1      140    5.47%
+      0     0      351.5243    11      333.7580 UserPurge1: 2      147    5.32%
+      0     0      350.9693    12      333.7580 UserPurge2: 1      157    5.16%
+      0     0      350.6916    13      333.7580 UserPurge2: 1      168    5.07%
+      0     0      349.2612    10      333.7580 UserPurge2: 1      180    4.65%
+      0     0      348.8582    11      333.7580 UserPurge2: 1      188    4.52%
+      0     0      348.5055    12      333.7580 UserPurge2: 1      197    4.42%
+      0     0      348.3860    13      333.7580 UserPurge1: 1      200    4.38%
+      0     0      347.8283    11      333.7580 UserPurge2: 1      212    4.22%
+      0     0      347.4936    11      333.7580 UserPurge2: 1      222    4.12%
+      0     0      347.3736    12      333.7580 UserPurge2: 1      226    4.08%
+      0     0      346.6711    13      333.7580 UserPurge2: 1      235    3.87%
+      0     0      345.7469    13      333.7580 UserPurge2: 1      247    3.59%
+      0     0      344.9523    12      333.7580 UserPurge2: 1      257    3.35%
+      0     0      344.5239    12      333.7580 UserPurge2: 1      262    3.23%
+      0     0      344.0592    12      333.7580 UserPurge2: 1      272    3.09%
+      0     0      343.8812    12      333.7580 UserPurge2: 1      276    3.03%
+      0     0      343.7357    13      333.7580 UserPurge2: 1      280    2.99%
+      0     0      343.4828    14      333.7580 UserPurge2: 1      285    2.91%
+      0     0      343.2966    14      333.7580 UserPurge2: 1      297    2.86%
+      0     0      342.9922    14      333.7580 UserPurge2: 1      307    2.77%
+      0     0      342.5382    12      333.7580 UserPurge2: 1      315    2.63%
+      0     0      342.2407    12      333.7580 UserPurge2: 1      321    2.54%
+      0     0      342.1799    13      333.7580 UserPurge2: 1      326    2.52%
+      0     0      342.1635    14      333.7580 UserPurge2: 1      329    2.52%
+      0     0      341.9728    14      333.7580 UserPurge2: 1      335    2.46%
+      0     0      341.6197    13      333.7580 UserPurge2: 1      344    2.36%
+*     0+    0                          335.6447      341.6197             1.78%
+      0     0      341.4402    14      335.6447 UserPurge2: 1      350    1.73%
+      0     0      341.1866    14      335.6447 UserPurge2: 1      356    1.65%
+      0     0      340.8009    14      335.6447 UserPurge2: 1      368    1.54%
+      0     0      340.4526    13      335.6447 UserPurge2: 1      378    1.43%
+      0     0      339.9054    14      335.6447 UserPurge2: 1      384    1.27%
+      0     0      339.8411    13      335.6447 UserPurge2: 1      388    1.25%
+      0     0      339.8218    13      335.6447 UserPurge2: 1      391    1.24%
+      0     0      339.6737    14      335.6447 UserPurge2: 1      396    1.20%
+      0     0      339.6123    14      335.6447 UserPurge2: 1      402    1.18%
+      0     0      339.5506    15      335.6447 UserPurge2: 1      407    1.16%
+      0     0      339.4077    14      335.6447 UserPurge2: 1      415    1.12%
+      0     0      339.3744    14      335.6447 UserPurge2: 1      422    1.11%
+      0     0      339.2774    15      335.6447 UserPurge2: 1      431    1.08%
+      0     0      339.2516    16      335.6447 UserPurge2: 1      434    1.07%
+      0     0      339.2265    17      335.6447 UserPurge2: 1      439    1.07%
+      0     0      338.9168    13      335.6447 UserPurge2: 1      453    0.97%
+      0     0      338.7776    13      335.6447 UserPurge2: 1      459    0.93%
+      0     0      338.6777    14      335.6447 UserPurge2: 1      465    0.90%
+      0     0      338.5721    14      335.6447 UserPurge2: 1      472    0.87%
+      0     0      338.4492    14      335.6447 UserPurge2: 1      480    0.84%
+      0     0      338.3486    15      335.6447 UserPurge2: 1      485    0.81%
+      0     0      338.3214    15      335.6447 UserPurge2: 1      491    0.80%
+      0     0      338.1670    14      335.6447 UserPurge2: 1      498    0.75%
+      0     0      338.1084    13      335.6447 UserPurge2: 1      503    0.73%
+      0     0      338.0416    13      335.6447 UserPurge2: 1      508    0.71%
+      0     0      337.9843    14      335.6447 UserPurge2: 1      515    0.70%
+      0     0      337.9354    14      335.6447 UserPurge2: 1      523    0.68%
+      0     0      337.9140    14      335.6447 UserPurge2: 1      526    0.68%
+      0     0      337.9029    15      335.6447 UserPurge2: 1      531    0.67%
+      0     0      337.8093    13      335.6447 UserPurge2: 1      540    0.64%
+      0     0      337.7719    14      335.6447 UserPurge2: 1      545    0.63%
+      0     0      337.5860    13      335.6447 UserPurge2: 1      557    0.58%
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 26 columns.
+Reduced MIP has 1 rows, 75 columns, and 74 nonzeros.
+Reduced MIP has 74 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1 rows, 75 columns, and 74 nonzeros.
+Reduced MIP has 74 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Represolve time = 0.00 sec. (0.99 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.37 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          335.6447      337.5860             0.58%
+      0     0      337.5860    13      335.6447      337.5860      587    0.58%
+      0     0      337.5573    13      335.6447 UserPurge2: 1      593    0.57%
+      0     0      337.4969    13      335.6447 UserPurge2: 1      601    0.55%
+      0     0      337.4213    14      335.6447 UserPurge2: 1      607    0.53%
+      0     0      337.3645    13      335.6447 UserPurge2: 1      615    0.51%
+      0     0      337.3494    13      335.6447 UserPurge2: 1      619    0.51%
+      0     0      337.3175    13      335.6447 UserPurge2: 1      622    0.50%
+      0     0      337.2738    13      335.6447 UserPurge2: 1      627    0.49%
+      0     0      337.2464    14      335.6447 UserPurge2: 1      628    0.48%
+      0     0      337.2243    15      335.6447 UserPurge2: 1      633    0.47%
+      0     0      337.1770    15      335.6447 UserPurge2: 1      639    0.46%
+      0     0      337.1194    13      335.6447 UserPurge2: 1      644    0.44%
+      0     0      337.0628    13      335.6447 UserPurge2: 1      651    0.42%
+      0     0      337.0499    14      335.6447 UserPurge2: 1      655    0.42%
+*     0+    0                          335.7335      337.0499             0.39%
+      0     0      337.0149    14      335.7335 UserPurge2: 1      663    0.38%
+*     0+    0                          336.0422      337.0149             0.29%
+      0     0      337.0064    15      336.0422 UserPurge2: 1      668    0.29%
+*     0+    0                          336.4121      337.0064             0.18%
+      0     0      336.9959    16      336.4121 UserPurge2: 1      675    0.17%
+      0     0      336.9904    17      336.4121 UserPurge2: 1      677    0.17%
+      0     0      336.9750    17      336.4121 UserPurge2: 1      681    0.17%
+      0     0      336.9263    15      336.4121 UserPurge2: 1      689    0.15%
+      0     0      336.8933    15      336.4121 UserPurge2: 1      699    0.14%
+      0     0      336.8826    16      336.4121 UserPurge2: 1      704    0.14%
+      0     0      336.8704    17      336.4121 UserPurge2: 1      707    0.14%
+      0     0      336.8571    16      336.4121 UserPurge2: 1      710    0.13%
+      0     0      336.8460    17      336.4121 UserPurge2: 1      711    0.13%
+      0     0      336.8294    16      336.4121 UserPurge2: 1      718    0.12%
+      0     0      336.8195    15      336.4121 UserPurge2: 1      727    0.12%
+      0     0      336.7977    16      336.4121 UserPurge2: 1      735    0.11%
+      0     0      336.7864    15      336.4121 UserPurge2: 1      739    0.11%
+      0     0      336.7781    16      336.4121 UserPurge2: 1      744    0.11%
+      0     0      336.7671    16      336.4121 UserPurge2: 1      748    0.11%
+      0     0      336.7307    15      336.4121 UserPurge2: 1      754    0.09%
+      0     0      336.7139    16      336.4121 UserPurge2: 1      758    0.09%
+      0     0      336.7056    17      336.4121 UserPurge2: 1      759    0.09%
+      0     0      336.6400    15      336.4121 UserPurge2: 1      766    0.07%
+      0     0      336.6187    15      336.4121 UserPurge2: 1      772    0.06%
+      0     0      336.6052    14      336.4121 UserPurge2: 1      777    0.06%
+      0     0      336.5911    15      336.4121 UserPurge2: 1      779    0.05%
+      0     0      336.5872    15      336.4121 UserPurge2: 1      783    0.05%
+      0     0      336.5753    15      336.4121 UserPurge2: 1      789    0.05%
+      0     0      336.5618    16      336.4121 UserPurge2: 1      793    0.04%
+      0     0      336.5595    17      336.4121 UserPurge2: 1      796    0.04%
+      0     0      336.5216    15      336.4121 UserPurge2: 1      803    0.03%
+      0     0      336.5208    16      336.4121 UserPurge2: 1      805    0.03%
+      0     0      336.5112    13      336.4121 UserPurge2: 1      813    0.03%
+      0     0      336.5064    12      336.4121 UserPurge2: 1      822    0.03%
+      0     0      336.5059    13      336.4121 UserPurge2: 1      826    0.03%
+      0     0      336.5004    13      336.4121 UserPurge2: 1      836    0.03%
+      0     0      336.4981    14      336.4121 UserPurge2: 1      839    0.03%
+      0     0      336.4879    13      336.4121 UserPurge2: 1      848    0.02%
+      0     0      336.4856    13      336.4121 UserPurge2: 1      853    0.02%
+      0     0      336.4845    14      336.4121 UserPurge2: 1      856    0.02%
+      0     0      336.4803    13      336.4121 UserPurge2: 1      861    0.02%
+      0     0      336.4377    12      336.4121 UserPurge2: 1      866    0.01%
+      0     0      336.4129     9      336.4121 UserPurge2: 1      870    0.00%
+      0     0        cutoff            336.4121                    871     --- 
+Elapsed time = 3.67 sec. (64.67 ticks, tree = 0.01 MB, solutions = 6)
+
+User cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    3.67 sec. (64.68 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    3.67 sec. (64.68 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    NewSubmodular
+solver                                  cplex
+
+p                                       9
+r                                       4
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 871
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 3.67 sec
+Objective Value: 336.412123
+Number of Nodes:      0
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]    44 / 1.40 [rUC]   131 / 0.25 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     7 / 0.24 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 50  [rUC] 131  [sLC] 0  [sUC] 0
+Root Best Bound 336.412123
+Root Best Integer: 336.412123
+Best Bound: 336.412123
+Best Integer: 336.412123
+

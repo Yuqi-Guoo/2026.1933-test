@@ -1,0 +1,93 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 289.8117.
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.72 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 10101 rows, 10101 columns, and 30100 nonzeros.
+Reduced MIP has 100 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.55 ticks)
+Probing time = 0.00 sec. (1.26 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (3.91 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          289.8117      558.0000            92.54%
+      0     0      293.1231     4      289.8117      558.0000        0   92.54%
+*     0+    0                          292.8751      293.1231             0.08%
+      0     2      293.1231     4      292.8751      293.1141        0    0.08%
+Elapsed time = 3.50 sec. (354.19 ticks, tree = 0.01 MB, solutions = 2)
+
+User cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    3.50 sec. (354.28 ticks)
+Sequential b&c:
+  Real time             =    0.07 sec. (27.36 ticks)
+                          ------------
+Total (root+branch&cut) =    3.57 sec. (381.64 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        true
+uc_only_rootnode                        false
+
+data                                    Biesinger
+fn                                      data/Biesinger/111_n100_std
+mode                                    ZLP
+solver                                  cplex
+
+p                                       8
+r                                       7
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+Solution X: [19, 23, 31, 52, 68, 76, 78, 96]
+Solution Y: [19, 24, 39, 52, 68, 74, 96]
+
+leader_capture_demand: [25.5, 40.352999182904256, 49.92412502506392, 28.5, 48.289325767590675, 23.525626589439966, 37.78297688323293, 39.0]
+follower_capture_demand: [27.412707890043308, 33.08786715070972, 30.95375800210664, 28.5, 47.065792226856324, 56.27734682194465, 41.827474460107624]
+
+========== Summary ==========
+Total Demand: 558
+Total Leader Captured: 292.8750534482317
+Total Follower Captured: 265.1249465517683
+
+@PrintInfos
+ItCnt: 43
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 3.57 sec
+Objective Value: 292.875053
+Number of Nodes:      3
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     4 / 1.24 [rUC]     2 / 0.22 [sLC]     1 / 0.05 [sUC]     0 / 0.00 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     6 / 0.19 [rUC]     2 / 0.07 [sLC]     1 / 0.04 [sUC]     0 / 0.00 
+Separation Round: [phase1] 0  [rLC] 6  [rUC] 2  [sLC] 1  [sUC] 0
+Root Best Bound 292.875053
+Root Best Integer: 292.875053
+Best Bound: 292.875053
+Best Integer: 292.875053
+

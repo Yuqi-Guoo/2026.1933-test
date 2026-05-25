@@ -1,0 +1,99 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               7200
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+Generic callback                                 0x60
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 1898.9173.
+Tried aggregator 1 time.
+Reduced MIP has 400501 rows, 400801 columns, and 1200800 nonzeros.
+Reduced MIP has 800 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.40 sec. (379.65 ticks)
+Probing time = 0.05 sec. (50.06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 400501 rows, 400801 columns, and 1200800 nonzeros.
+Reduced MIP has 800 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.40 sec. (373.16 ticks)
+Probing time = 0.05 sec. (50.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.13 sec. (154.29 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         1898.9173     2716.0000            43.03%
+      0     0     1990.1923    16     1898.9173     2716.0000        0   43.03%
+      0     0     1899.4150    36     1898.9173      Fract: 4       25    0.03%
+      0     0     1899.3948    39     1898.9173     Fract: 10      115    0.03%
+*     0+    0                         1899.0850     1899.3948             0.02%
+*     0+    0                         1899.2449     1899.3948             0.01%
+      0     2     1899.3687    42     1899.2449     1899.3687      115    0.01%
+Elapsed time = 55.39 sec. (30862.78 ticks, tree = 0.01 MB, solutions = 3)
+      2     4     1899.2819    48     1899.2449     1899.2860      433    0.00%
+      3     5     1899.2596    23     1899.2449     1899.2857      572    0.00%
+      5     3        cutoff           1899.2449     1899.2857      588    0.00%
+      6     4     1899.2794    43     1899.2449     1899.2819      618    0.00%
+      8     3     1899.2453    42     1899.2449     1899.2819      707    0.00%
+     10     3     1899.2637    47     1899.2449     1899.2817      831    0.00%
+     11     2        cutoff           1899.2449     1899.2817      888    0.00%
+     12     3     1899.2595    48     1899.2449     1899.2817      917    0.00%
+     13     2        cutoff           1899.2449     1899.2817      958    0.00%
+     15     2     1899.2623    31     1899.2449     1899.2621     1072    0.00%
+Elapsed time = 107.22 sec. (39069.76 ticks, tree = 0.01 MB, solutions = 3)
+*    17     2      integral     0     1899.2607     1899.2607     1107    0.00%
+
+Gomory fractional cuts applied:  3
+User cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =   55.36 sec. (30829.20 ticks)
+Sequential b&c:
+  Real time             =   58.71 sec. (9237.34 ticks)
+                          ------------
+Total (root+branch&cut) =  114.07 sec. (40066.55 ticks)
+@Parameters: 
+is_S_cut                                true
+is_add_all_yinF                         true
+is_start_value                          true
+is_usercut                              true
+is_visualization                        false
+uc_only_rootnode                        false
+
+data                                    Qi
+fn                                      data/Qi/instance_500_800.csv
+mode                                    ZLP
+solver                                  cplex
+
+p                                       50
+r                                       5
+
+EPS                                     1.0e-06
+EPS_vio                                 1.0e-04
+beta                                    0.10
+gap                                     0.00
+nodelimit                               Inf
+timelimit                               7200.00
+
+
+@PrintInfos
+ItCnt: 1109
+Current gap: 0.00 %
+Termination Status: OPTIMAL
+Primal Status: FEASIBLE_POINT
+Solve Time: 114.07 sec
+Objective Value: 1899.260706
+Number of Nodes:     19
+
+CutInfo: [phase] num / time (sec) 
+ZLP             [phase1]     0 / 0.00 [rLC]     4 / 13.35 [rUC]     5 / 10.05 [sLC]     0 / 1.89 [sUC]     2 / 37.48 
+OldSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+NewSubmodular   [phase1]     0 / 0.00 [rLC]     0 / 0.00 [rUC]     0 / 0.00 [sLC]     0 / 0.00 [sUC]     0 / 0.00 
+PMP             [phase1]     0 / 0.00 [rLC]     7 / 9.74 [rUC]     5 / 7.64 [sLC]     1 / 1.69 [sUC]    20 / 30.89 
+Separation Round: [phase1] 0  [rLC] 7  [rUC] 5  [sLC] 1  [sUC] 20
+Root Best Bound 1899.285992
+Root Best Integer: 1899.244922
+Best Bound: 1899.260706
+Best Integer: 1899.260706
+
