@@ -18,7 +18,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @misc{GuoWangChenDai2026,
-  author =        {Yu-Qi Guo, Yan-Ru Wang, Wei-Kun Chen, and Yu-Hong Dai},
+  author = {Yu-Qi Guo and Yan-Ru Wang and Wei-Kun Chen and Yu-Hong Dai},
   publisher =     {INFORMS Journal on Computing},
   title =         {An Efficient Branch-and-Cut Approach for the Sequential Competitive Facility Location Problem under Partially Binary Rule},
   year =          {2026},
@@ -72,13 +72,13 @@ Command-line argument descriptions:
 
 To reproduce the computational results presented in the paper, run the following scripts from the root of the repository.
 
-**Table 1** (small-scale `Biesinger` instances):
+**Table 1 and large-scale instance-wise results** (`Biesinger` and `Qi` instances):
 
 ```bash
 bash scripts/generate_tables.sh
 ```
 
-This processes the `.out` files in `results/Biesinger/` and writes the final `LaTeX` table to `scripts/table/Table1.tex`.
+This processes the `.out` files in `results/Biesinger/` and writes Table 1 to `scripts/table/Table1.tex`. It also processes `results/Qi/*.out` and writes the instance-wise large-scale results table to `scripts/table/table_Qi.tex`. A pre-generated `CSV` version of the latter is provided at `results/table_Qi.csv` (see Section 7.2 of the paper).
 
 **Figures 1–4** (performance profiles on `Qi` instances):
 

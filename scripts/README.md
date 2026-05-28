@@ -4,11 +4,11 @@ This directory contains scripts for processing computational results and generat
 
 ## Structure
 
-- `table/` — scripts for generating Table 1 (main computational results on Biesinger instances)
+- `table/` — scripts for generating Table 1 and the large-scale instance-wise results table
 - `plot/` — scripts and data for generating Figures 1–4 (performance profiles on Qi instances)
 - `visualization/` — scripts for generating Figures 6–7 (facility location visualization, online supplement)
 
-## Generating Table 1
+## Generating **Table 1 and large-scale instance-wise results** (`Biesinger` and `Qi` instances):
 
 Run the following command from the root of the repository:
 
@@ -16,7 +16,10 @@ Run the following command from the root of the repository:
 bash scripts/generate_tables.sh
 ```
 
-The final output is written to `scripts/table/Table1.tex`.
+This runs three steps:
+1. Processes `results/Biesinger/*.out` via `scripts/table/Biesinger.awk` and writes `results/Biesinger_summary.out`
+2. Merges EA results from Biesinger et al. (2016) via `scripts/table/merge_Biesinger.py` and writes `scripts/table/Table1.tex`
+3. Processes `results/Qi/*.out` via `scripts/plot/Qi.awk` and writes `scripts/table/table_Qi.tex` (a pre-generated CSV version is available at `results/table_Qi.csv`)
 
 ## Generating Figures 1–4 (performance profiles)
 
