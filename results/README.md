@@ -56,7 +56,7 @@ And `111_n100_std-ZLP-100-100-2-2-0.1.out` in `visualization/` is the result of 
 
 ### CSV Data Details
 
-The CSV file `table_Qi.csv` contains detailed computational results for all 144 large-scale SCFLP instances. For each algorithm (B&C+GSF and B&C+EF), the following columns are reported (with the algorithm name appended as a suffix, e.g., `Obj_B&C+GSF`):
+The CSV file `table_Qi.csv` contains detailed computational results for all 144 large-scale SCFLP instances. For each algorithm (B&C+GSF and B&C+EF), the following columns are reported:
 
 #### Results
 
